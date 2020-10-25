@@ -14,6 +14,7 @@ var division = [];
 function setup() {
   createCanvas(480,800);
   engine = Engine.create();
+  Engine.run(engine);
   world = engine.world;
  
   ground = new Ground(240,790,500,10);
@@ -67,7 +68,7 @@ for (var k  = 0;k < division.length; k++){
   divider7.display();
   */
   ground.display();
-  for (var j = 0; j <=plinko.length; j++){
+  for (var j = 0; j <plinko.length; j++){
     plinko[j].display();
    }
   drawSprites();
